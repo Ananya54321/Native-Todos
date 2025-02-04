@@ -118,7 +118,7 @@ export default function Index() {
         data={todos}
         renderItem={({ item }) => (
           <View style={styles.todoContainer}>
-            <Text style={styles.todoText}>{item.title}</Text>
+            <Text className="text-white">{item.title}</Text>
             <Text style={styles.todoDescription}>{item.description}</Text>
             <Pressable onPress={() => toggleTodo(item.id)}>
               <Text style={styles.toggleText}>
